@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.set(".nav-item", { y: 25, opacity: 0 });
     gsap.set("h1, .item, footer", { y: 200 });
 
-    const t1 = gsap.timeline({ delay: 1 });
+    const t1 = gsap.timeline({ delay: 0.5 });
 
     t1.to(".img", {
       y: 0,
