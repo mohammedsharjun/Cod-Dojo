@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "caveat" , static;
 }
 
 html,
 body {
     font-family: "Sharp Grotesk", Arial, sans-serif; /* Added fallback fonts */
-    background: #e7e4e5;
+    background: #efefef;
     overflow-x: hidden;
+    
 }
 
 .loader {
@@ -21,7 +23,8 @@ body {
 }
 
 .loader-img {
-    width: 140%;
+    z-index: 100;
+    width: 160%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,4 +44,30 @@ img {
     width: 100%;
     height: 85%;
     object-fit: cover;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section h2 {
+    position: relative;
+    color: #333;
+    font-size:8em;
+    font-weight: 700;
+    
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     gsap.set(".img", { y: 500 });
     gsap.set(".loader-img", { x: 500 });
-    gsap.set(".nav-item", { y: 25, opacity: 0 });
+    gsap.set(".nav-item, section", { y: 25, opacity: 0 });
     gsap.set("h1, .item, footer", { y: 200 });
 
     const t1 = gsap.timeline({ delay: 0.5 });
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power3.inOut",
     }, "-=0.5")
 
-    .to(".nav-item, h1, footer, .item", {
+    .to(".nav-item, h1, footer, .item, section", {
         y: 0,
         opacity: 1,
         duration: 1,
@@ -41,3 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power3.inOut",
     }, "-=0.5");
 });
+
+
+
