@@ -61,12 +61,12 @@ nav{
 }
 .nav-item:nth-child(1){
     text-align: left;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .nav-item:nth-child(3){
-    text-align: right;
+    text-align: left;
     position: fixed;
     top: 0;
     right: 0;
@@ -95,7 +95,6 @@ a {
     align-items: flex-start;
     margin: 1em;
     padding: 15px;
-    font-size: 13px;
     color: #fff;
     background-color: rgba(255,255,255, 0.1);
     backdrop-filter: blur(16px);
@@ -105,8 +104,8 @@ a {
 }
 
 .card-img {
-    width: 80px;
-    min-width: 80px;
+    width: 60px;
+    min-width: 60px;
     height: 60px;
     border-radius: 6px;
     overflow: hidden;
@@ -128,10 +127,16 @@ a {
     
 }
 .card-title a {
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
+}
+.card-title a:hover{
+    color: rgb(255, 221, 0);
 }
 
 .card-info{
+    font-size: 13px;
     color: #8f8f8e;
 }
 
@@ -147,14 +152,21 @@ a {
     background: #2a2a2a;
     color: #fff;
     margin: 0 1em;
-    padding: 10px 16px 12px 16px;
-    border-radius: 20px;
+    margin-right: 20px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
-}
-
-.toggle button:hover {
     background: #fff;
+}
+#togglebutton img{
+    color: #fff;
+    margin-top: 2px;
+    width: 35px;
+    height: 35px;
+}
+.toggle button:hover {
+    background: rgb(255, 221, 0);
     color: #2a2a2a;
 }
 
@@ -741,3 +753,4 @@ a {
         transform: translateY(-2000px);
     }
 }
+
