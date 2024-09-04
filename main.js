@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     gsap.set(".img", { y: 500 });
     gsap.set(".loader-img", { x: 500 });
-    gsap.set(".nav-item", { y: 25, opacity: 0 });
+    gsap.set(".nav-item, .wrapper", { y: 25, opacity: 0 });
     gsap.set("h1, .item, footer", { y: 200 });
 
     const t1 = gsap.timeline({ delay: 0.5 });
 
     t1.to(".img", {
       y: 0,
-      duration: 1.5,
+      duration: 1,
       stagger: 0.05,
       ease: "power3.inOut",
     }).to(
       ".loader-img",
       {
         x: 0,
-        duration: 3,
+        duration: 0,
         ease: "power3.inOut",
       },
       "-=2.5"
@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
     
     .to(".loader", {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-        duration: 1,
+        duration: 0.5,
         ease: "power3.inOut",
     }, "-=0.5")
 
-    .to(".nav-item, h1, footer, .item, section", {
+    .to(".nav-item, h1, footer, .item, .wrapper", {
         y: 0,
         opacity: 1,
         duration: 1,
